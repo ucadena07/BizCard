@@ -69,8 +69,29 @@ fun CreateBizCard(){
                 horizontalAlignment = Alignment.CenterHorizontally) {
                 CreateImageProfile()
                 Divider()
+                CreateInfo()
             }
         }
+    }
+}
+
+@Composable
+private fun CreateInfo() {
+    Column(modifier = Modifier.padding(5.dp)) {
+        Text(
+            text = "Ulises Cadena",
+            style = MaterialTheme.typography.headlineMedium,
+            color = MaterialTheme.colorScheme.primary
+        )
+        Text(
+            text = "Android Compose Programmer",
+            modifier = Modifier.padding(3.dp),
+        )
+        Text(
+            text = "ucadena07@gmail.com",
+            style = MaterialTheme.typography.titleSmall,
+            modifier = Modifier.padding(3.dp),
+        )
     }
 }
 
